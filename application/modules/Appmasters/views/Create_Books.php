@@ -6,7 +6,7 @@
                     <div class="card-block">
                         <form class="form" method="post" action="<?php echo site_url('appmasters/books/save-books'); ?>">
                         	<fieldset>
-                            	<label>Barcode &nbsp;&nbsp;&nbsp; <button onClick="generatebarcode()" type="button" class="btn btn-warning btn-sm square pull-right">Generate Barcode</button></label>
+                            	<label>Kairal No. &nbsp;&nbsp;&nbsp; <!-- <button onClick="generatebarcode()" type="button" class="btn btn-warning btn-sm square pull-right">Generate Barcode</button> --></label>
                                 <div class="position-relative has-icon-left">
                                 	<input type="text" id="barcode" class="form-control square" name="barcode" autocomplete="off" required />
                                 	<div class="form-control-position"><i class="fa fa-barcode info"></i></div>
@@ -83,6 +83,66 @@
                             	<label>Publishers</label>
                                 <div class="position-relative has-icon-left">
                                 	<textarea class="form-control square" name="book_publishers"></textarea>
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+
+                            <fieldset>
+                            	<label>Barcode No.</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="barcode_number"  autocomplete="off" />
+                                	<div class="form-control-position"><i class="fa fa-barcode info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+                            <fieldset>
+                            	<label>Stock Number</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="stock_number" autocomplete="off" />
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+                            <fieldset>
+                            	<label>Call Number</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="call_number" autocomplete="off" />
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+                            <fieldset>
+                            	<label>Edition</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="edition" autocomplete="off" />
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+
+                            <fieldset>
+                            	<label>Shelf</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="shelf" autocomplete="off" />
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+                            
+                            <fieldset>
+                            	<label>Book Type</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="book_type" autocomplete="off" />
+                                	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
+								</div>
+                            </fieldset>
+                            <p></p>
+
+                            <fieldset>
+                            	<label>Extra Subject</label>
+                                <div class="position-relative has-icon-left">
+                                	<input type="text" class="form-control square" name="extra_subject" autocomplete="off" />
                                 	<div class="form-control-position"><i class="ft-edit-2 info"></i></div>
 								</div>
                             </fieldset>
