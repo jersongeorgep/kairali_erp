@@ -45,14 +45,18 @@ class Books extends Admin_Controller {
 		if($id){
 			$data = $this->Books_m->array_from_post(array(
 			'barcode',
-			'name_eng',
 			'name_mal',
 			'author',
 			'cateid',
 			'vol',
 			'price',
-			'book_description',
-			'status'
+			'status',
+			'stock_number',
+			'call_number',
+			'edition',
+			'shelf',
+			'book_type',
+			'extra_subject'
 			));
 			$data['status'] = 1;
 			$this->Books_m->update($id, $data);
@@ -65,14 +69,18 @@ class Books extends Admin_Controller {
 		}else{
 			$data = $this->Books_m->array_from_post(array(
 			'barcode',
-			'name_eng',
 			'name_mal',
 			'author',
 			'cateid',
 			'vol',
 			'price',
-			'book_description',
-			'status'
+			'status',
+			'stock_number',
+			'call_number',
+			'edition',
+			'shelf',
+			'book_type',
+			'extra_subject'
 			));
 			$data['status'] = 1;
 			$this->Books_m->insert($data);	

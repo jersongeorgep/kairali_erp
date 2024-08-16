@@ -86,7 +86,7 @@ function updatedata($model, $dataarray, $id){
 function getbydata($model, $feild, $value, $result){
 	$CI =& get_instance();
 	$data = $CI->$model->get_by($feild, $value);
-	return $data->$result;
+	return (($data) ? $data->$result : '');
 }
 
 //=============== Auto Numbering for  =======

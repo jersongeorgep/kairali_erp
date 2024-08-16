@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 date_default_timezone_set('Asia/Kolkata');
+
 	function __autoload($classename){
 	if(strpos($classename, 'CI_') !== 0){
 	$file = APPPATH. 'libraries/'. $classename . '.php';
